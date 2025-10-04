@@ -34,6 +34,66 @@
 # print(name)
 
 #int + int = int
-print(1 + 2)
-#str + str = str
-print("1" + "2")
+# print(1 + 2)
+# #str + str = str
+# print("1" + "2")
+
+
+
+
+
+# 04. Primitive data type(원시 자료형)에 대해 알아보기.
+
+# # Integers(정수형)
+# progile_number = 7216
+# print(progile_number)
+
+
+# # Floats(실수형으로 변환)
+# score = float(60)
+# print(score)
+
+# # Booleans(불리언형, 참/거짓)
+# is_student = True
+# print(is_student)
+
+
+# # Strings(문자열형)
+# dba_name = "data_forge" #따옴표 2개로 표시.
+# db_name = 'andamiro' #따옴표 1개로 표시.
+# schema_detatil ="""this shcema is about
+# data_forge"""  #여러줄 문자열은 큰따옴표 3개로 표시.
+
+# print(dba_name)
+# print(db_name)
+# print(schema_detatil)
+
+
+# # string indexing(문자열 인덱싱)
+# name = "data_forge"
+# print(name[0])
+# print(name[1])
+# print(name[2])
+# print(name[3])
+# print(name[4])
+# print(name[5])
+# print(name[6])
+# print(name[7])
+# print(name[8])
+# print(name[9])
+
+# # check object type (객체 타입 확인)
+# print(type(name))
+
+
+# 05. Type error(타입 오류)에 대해 알아보기.
+
+# str + int = error
+# print("Hello" + 1 + "World")
+
+
+# convert type (타입 변환) int to str
+# print(type(1))
+# print(type(str(1)))
+
+# print("Hello" + str(1) + "World")
