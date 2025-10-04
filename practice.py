@@ -97,3 +97,41 @@
 # print(type(str(1)))
 
 # print("Hello" + str(1) + "World")
+
+# 06.Mathmatical opertaion(수학 연산자)에 대해서 알아보기
+
+# print(1 + 2)
+# print(1 - 2)
+# print(1 * 2)
+
+# # /의 리턴값은 float = /(나누기 연산자)
+# print(1 / 2)
+# print(1/1)
+
+# # floor division(몫) = //(몫 연산자)
+# print(3//2)
+# print(7//3)
+
+# # Exponentiation(제곱) = **(제곱 연산자)
+# print(2**3)
+# print(3**3)
+
+# # modulo(나머지) = %(나머지 연산자)
+# print(60 % 13)
+# print(52 % 8)
+
+# PEMDAS(수학 연산자 우선순위)
+# Parentheses(괄호)
+# Exponents(제곱)
+# Multiplication(곱셈)
+# Division(나눗셈)
+# Addition(덧셈)
+# Subtraction(뺄셈)
+# And Left To Right(왼쪽에서 오른쪽으로 계산)
+
+
+sum = 8
+sum += 1  #sum = sum + 1
+print(sum)
+
+
