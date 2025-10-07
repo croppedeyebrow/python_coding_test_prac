@@ -130,8 +130,40 @@
 # And Left To Right(왼쪽에서 오른쪽으로 계산)
 
 
-sum = 8
-sum += 1  #sum = sum + 1
-print(sum)
+# sum = 8
+# sum += 1  #sum = sum + 1
+# print(sum)
 
+
+#07. f-string(문자열 포맷팅)에 대해 알아보기.
+
+# name = "data_forge"
+# age = 30
+# print("Hello, %s" %name) #%s는 문자열 포맷팅
+# print("Hello, %s, you are %s years old" %(name, age)) #%s는 문자열 포맷팅, ()안에 변수를 넣어준다.
+# print("--------------------------------")
+# #문제는 변수를 하나씩 넣어줘야 하는 번거로움.
+
+# # 번거로움을 피하기 위해 {}안에 인덱스를 넣어서 하는 방법이 2.6부터 고안됨.
+
+# print("Hello, {0}, i am {1} years old".format(name, age)) #{}안에 인덱스를 넣어서 하는 방법.
+
+# print("--------------------------------")
+# # 딕셔너리를 사용하는 방법 
+# person = {"name": "data_forge", "age": 30}
+# print("Hello, {name}, i am {age} years old".format(name=person["name"], age=person["age"])) #format_map를 사용하여 딕셔너리를 풀어서 하는 방법.
+# print("Hello, {name}, i am {age} years old".format(**person)) #**를 사용하여 딕셔너리를 풀어서 하는 방법.
+
+# # 딕셔너리는 키-값 쌍으로 이루어져 있기 때문에, 키를 사용하여 값을 가져올 수 있다.
+
+# print("--------------------------------")
+
+# #f-string 방법
+
+# #""앞에 f를 붙여서 사용하는 방법. 중괄호를 넣고 변수 이름을 넣으면 자동으로 할당
+
+# print(f"Hello, {name}, i am {age} years old") #f-string 방법.
+
+
+# 08. Conditional statement(조건문)에 대해 알아보기.
 
