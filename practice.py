@@ -212,70 +212,141 @@
     
 # 09. 복합 조건절(Multiple if Conditional Expression)에 대해서.    
 
-print("--------------------------------")
+# print("--------------------------------")
 
-#복합 조건절 = 단일 조건절을 조합하여 사용하는 것.
+# #복합 조건절 = 단일 조건절을 조합하여 사용하는 것.
 
-my_stock = 100
+# my_stock = 100
 
-if my_stock > 0:
-    print(f"My stock, {my_stock} is greater than 0")
-if my_stock > 100:
-    print(f"My stock, {my_stock} is greater than 100")
-if my_stock > 1000:
-    print(f"My stock, {my_stock} is greater than 1000")
-if my_stock > 10000:
-    print(f"My stock, {my_stock} is greater than 10000")
+# if my_stock > 0:
+#     print(f"My stock, {my_stock} is greater than 0")
+# if my_stock > 100:
+#     print(f"My stock, {my_stock} is greater than 100")
+# if my_stock > 1000:
+#     print(f"My stock, {my_stock} is greater than 1000")
+# if my_stock > 10000:
+#     print(f"My stock, {my_stock} is greater than 10000")
 
-print("--------------------------------")
+# print("--------------------------------")
 
-# 복합 조건문 and, or, not
+# # 복합 조건문 and, or, not
 
-#and
-my_stock = 100
+# #and
+# my_stock = 100
 
-if my_stock > 0 and my_stock <= 100:
-    print("My stock is between 1 and 100")
-elif my_stock > 100 and my_stock <= 1000:
-    print("My stock is between 101 and 1000")
-elif my_stock > 1000 and my_stock <= 10000:
-    print("My stock is between 1001 and 10000")
-else:
-    print("My stock is 0 or more than 10000")
+# if my_stock > 0 and my_stock <= 100:
+#     print("My stock is between 1 and 100")
+# elif my_stock > 100 and my_stock <= 1000:
+#     print("My stock is between 101 and 1000")
+# elif my_stock > 1000 and my_stock <= 10000:
+#     print("My stock is between 1001 and 10000")
+# else:
+#     print("My stock is 0 or more than 10000")
 
 
-print("--------------------------------")
+# print("--------------------------------")
 
-#or
+# #or
 
-my_stock = 100
+# my_stock = 100
 
-# 100보다 작거나, 1000보다 큰 경우
-if my_stock < 100 or my_stock > 1000:
-    print("Stock is either less than 100 OR greater than 1000")
-else:
-    print("Stock is between 100 and 1000")
+# # 100보다 작거나, 1000보다 큰 경우
+# if my_stock < 100 or my_stock > 1000:
+#     print("Stock is either less than 100 OR greater than 1000")
+# else:
+#     print("Stock is between 100 and 1000")
 
-print("--------------------------------")
-#not
-my_stock = 100
+# print("--------------------------------")
+# #not
+# my_stock = 100
 
-# 0 이상이 아닌 경우
-if not (my_stock >= 0):
-    print("Stock is negative")
-else:
-    print("Stock is zero or positive")
+# # 0 이상이 아닌 경우
+# if not (my_stock >= 0):
+#     print("Stock is negative")
+# else:
+#     print("Stock is zero or positive")
 
-print("--------------------------------")
-# or + not
-my_stock = 100
+# print("--------------------------------")
+# # or + not
+# my_stock = 100
 
-# (100보다 작거나 1000보다 큰 상태)가 아닌 경우
-if not (my_stock < 100 or my_stock > 1000):
-    print("Stock is between 100 and 1000 (inclusive)")
-else:
-    print("Stock is outside 100~1000 range")
+# # (100보다 작거나 1000보다 큰 상태)가 아닌 경우
+# if not (my_stock < 100 or my_stock > 1000):
+#     print("Stock is between 100 and 1000 (inclusive)")
+# else:
+#     print("Stock is outside 100~1000 range")
 
 
 
 # 10. Logical operator(논리 연산자)에 대해 알아보기.
+
+# value = 30
+# # 파이썬은 한 줄로 코드를 작성할 수 있지만, 여러 줄로 코드를 작성할 수 있도록 하는 방법이 있다. == \
+# #“이 문장이 아직 끝난 게 아니야, 다음 줄도 이어서 읽어줘” 라고 알려줘야 하는데, 그 역할을 하는 게 바로 \
+# if isinstance(value, int) and \
+#     value > 50:
+#     print("Value is an integer greater than 50")
+# else:
+#     print("Value is not an integer or not greater than 50")
+
+# print("--------------------------------")
+
+
+# if not isinstance(value, float):
+#     print(f"{value} is not a float")
+
+
+# 11. Randomization(임의) 모듈에 대해서 알아보기.
+
+
+#random module
+
+# 모듈이란, 함수, 클래스, 변수 등을 미리 작성해둔 코드 묶음을 재사용 가능하게 한 단위.
+
+# import random
+
+# print(random.randint(1, 100))
+# #양 끝값 a와 b를 포함해서 무작위 정수를 반환
+
+# random_float = random.random()
+# print(random_float)
+# #0.0과 1.0 사이의 무작위 실수를 반환    
+
+
+
+# 12. 동전 앞뒤 맞추기.
+
+# import random
+
+# random_value = random.randint(0,10)
+
+# if random_value %2 ==0:
+#     print("Head")
+# else:
+#     print("Tail")
+
+
+# 30번 실행해서, Head와 Tail이 몇 번 나왔는지 카운트해서 출력하기.
+
+import random
+head_count = 0
+tail_count = 0
+
+for i in range(30):
+    random_value = random.randint(0,10)
+    if random_value %2 ==0:
+        head_count += 1
+    else:
+        tail_count += 1
+
+print(f"Head: {head_count}, Tail: {tail_count}")
+
+
+# 30번 실행해서, Head가 나올 확률 구하기.
+
+head_probability = head_count / 30
+print(f"Head probability: {head_probability}")
+
+tail_probability = tail_count / 30
+print(f"Tail probability: {tail_probability}")
+
