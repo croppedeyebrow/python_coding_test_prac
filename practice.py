@@ -167,3 +167,63 @@
 
 # 08. Conditional statement(조건문)에 대해 알아보기.
 
+# condition(조건절) : if, else
+# if 10 > 20:
+#     print("10 is greater than 20")
+# else:
+#     print("10 is less than 20")
+    
+# print("--------------------------------")  
+
+# # condition(조건절) : if, elif, else
+# if 20 > 20:
+#     print("10 is greater than 20")
+# elif 20 == 20:
+#     print("10 is equal to 20")
+# else:
+#     print("10 is less than 20")
+
+# print("--------------------------------")
+
+# my_stock = 100000
+
+# if my_stock == 0:
+#     print(f"My stock, {my_stock} is equal to 0")
+# elif my_stock == 100:
+#     print(f"My stock, {my_stock} is equal to 100")
+# elif my_stock == 1000:
+#     print(f"My stock, {my_stock} is equal to 1000")
+# elif my_stock == 10000:
+#     print(f"My stock, {my_stock} is equal to 10000")
+# else:
+#     print(f"My stock, {my_stock} is equal to 100000")
+
+
+
+
+# print("--------------------------------")   
+ 
+# # input에 int값을 받는 condition 조건절
+# if int(input("How tall, are you in cm?")) > 180:
+#     print("You are over 180cm")
+# else:
+#     print("You are under 180cm")
+    
+    
+# 09. 복합 조건절(Multiple if Conditional Expression)에 대해서.    
+
+# my_stock = 100
+
+# if my_stock > 0:
+#     print(f"My stock, {my_stock} is greater than 0")
+# if my_stock > 100:
+#     print(f"My stock, {my_stock} is greater than 100")
+# if my_stock > 1000:
+#     print(f"My stock, {my_stock} is greater than 1000")
+# if my_stock > 10000:
+#     print(f"My stock, {my_stock} is greater than 10000")
+# else:
+#     print(f"My stock, {my_stock} is equal to 0")
+
+
+# 10. Logical operator(논리 연산자)에 대해 알아보기.
