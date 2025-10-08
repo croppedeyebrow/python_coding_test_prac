@@ -212,18 +212,70 @@
     
 # 09. 복합 조건절(Multiple if Conditional Expression)에 대해서.    
 
-# my_stock = 100
+print("--------------------------------")
 
-# if my_stock > 0:
-#     print(f"My stock, {my_stock} is greater than 0")
-# if my_stock > 100:
-#     print(f"My stock, {my_stock} is greater than 100")
-# if my_stock > 1000:
-#     print(f"My stock, {my_stock} is greater than 1000")
-# if my_stock > 10000:
-#     print(f"My stock, {my_stock} is greater than 10000")
-# else:
-#     print(f"My stock, {my_stock} is equal to 0")
+#복합 조건절 = 단일 조건절을 조합하여 사용하는 것.
+
+my_stock = 100
+
+if my_stock > 0:
+    print(f"My stock, {my_stock} is greater than 0")
+if my_stock > 100:
+    print(f"My stock, {my_stock} is greater than 100")
+if my_stock > 1000:
+    print(f"My stock, {my_stock} is greater than 1000")
+if my_stock > 10000:
+    print(f"My stock, {my_stock} is greater than 10000")
+
+print("--------------------------------")
+
+# 복합 조건문 and, or, not
+
+#and
+my_stock = 100
+
+if my_stock > 0 and my_stock <= 100:
+    print("My stock is between 1 and 100")
+elif my_stock > 100 and my_stock <= 1000:
+    print("My stock is between 101 and 1000")
+elif my_stock > 1000 and my_stock <= 10000:
+    print("My stock is between 1001 and 10000")
+else:
+    print("My stock is 0 or more than 10000")
+
+
+print("--------------------------------")
+
+#or
+
+my_stock = 100
+
+# 100보다 작거나, 1000보다 큰 경우
+if my_stock < 100 or my_stock > 1000:
+    print("Stock is either less than 100 OR greater than 1000")
+else:
+    print("Stock is between 100 and 1000")
+
+print("--------------------------------")
+#not
+my_stock = 100
+
+# 0 이상이 아닌 경우
+if not (my_stock >= 0):
+    print("Stock is negative")
+else:
+    print("Stock is zero or positive")
+
+print("--------------------------------")
+# or + not
+my_stock = 100
+
+# (100보다 작거나 1000보다 큰 상태)가 아닌 경우
+if not (my_stock < 100 or my_stock > 1000):
+    print("Stock is between 100 and 1000 (inclusive)")
+else:
+    print("Stock is outside 100~1000 range")
+
 
 
 # 10. Logical operator(논리 연산자)에 대해 알아보기.
