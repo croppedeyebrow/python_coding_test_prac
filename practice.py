@@ -328,25 +328,36 @@
 
 # 30번 실행해서, Head와 Tail이 몇 번 나왔는지 카운트해서 출력하기.
 
-import random
-head_count = 0
-tail_count = 0
+# import random
+# head_count = 0
+# tail_count = 0
 
-for i in range(30):
-    random_value = random.randint(0,10)
-    if random_value %2 ==0:
-        head_count += 1
-    else:
-        tail_count += 1
+# for i in range(30):
+#     random_value = random.randint(0,10)
+#     if random_value %2 ==0:
+#         head_count += 1
+#     else:
+#         tail_count += 1
 
-print(f"Head: {head_count}, Tail: {tail_count}")
+# print(f"Head: {head_count}, Tail: {tail_count}")
 
 
-# 30번 실행해서, Head가 나올 확률 구하기.
+# # 30번 실행해서, Head가 나올 확률 구하기.
 
-head_probability = head_count / 30
-print(f"Head probability: {head_probability}")
+# head_probability = head_count / 30
+# print(f"Head probability: {head_probability}")
 
-tail_probability = tail_count / 30
-print(f"Tail probability: {tail_probability}")
+# tail_probability = tail_count / 30
+# print(f"Tail probability: {tail_probability}")
 
+
+
+# 13. List data Structure(리스트 자료구조)에 대해 알아보기.
+
+# 언제 쓰이는가??
+# 1. 데이터를 순차적으로 저장하고 관리하는 데 사용된다.
+# 2. 데이터를 인덱스를 사용하여 접근할 수 있다.
+
+countries = ["Korea", "USA", "Japan", "Germany", "Canada"]
+
+print(countries)
