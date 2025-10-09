@@ -358,54 +358,74 @@
 # 1. 데이터를 순차적으로 저장하고 관리하는 데 사용된다.
 # 2. 데이터를 인덱스를 사용하여 접근할 수 있다.
 
-countries = ["Korea", "USA", "Japan", "Germany", "Canada"]
+# countries = ["Korea", "USA", "Japan", "Germany", "Canada"]
 
-print(countries)
+# print(countries)
 
-# 인덱스를 통해 리스트의 값에 접근하고, 수정할 수 있다.
+# # 인덱스를 통해 리스트의 값에 접근하고, 수정할 수 있다.
 
-countries[4] = "Australia"
+# countries[4] = "Australia"
 
-print(countries)
+# print(countries)
 
-# 변수에 값을 담아서, 리스트에 변수로 추가할 수 있다.
+# # 변수에 값을 담아서, 리스트에 변수로 추가할 수 있다.
 
-element = "mars"
+# element = "mars"
 
-planets  = ["Mercury", "Venus","Earth", element]
+# planets  = ["Mercury", "Venus","Earth", element]
 
-print(planets)
+# print(planets)
 
-# list의 메소드, append()는 리스트의 마지막에 값을 추가한다.
+# # list의 메소드, append()는 리스트의 마지막에 값을 추가한다.
 
-planets.append("Jupiter")
+# planets.append("Jupiter")
 
-print(planets)
+# print(planets)
 
-# +=[list]는 리스트의 마지막에 리스트를 추가한다.
+# # +=[list]는 리스트의 마지막에 리스트를 추가한다.
 
-planets += ["Saturn", "Uranus", "Neptune"]
-print(planets)
+# planets += ["Saturn", "Uranus", "Neptune"]
+# print(planets)
 
-# list의 insert()는 지정한 인덱스에 앞에 값을 추가한다.
-planets.insert(0,"Sun")
-print(planets)
-planets.insert(0,"Bigbang")
-print(planets)
+# # list의 insert()는 지정한 인덱스에 앞에 값을 추가한다.
+# planets.insert(0,"Sun")
+# print(planets)
+# planets.insert(0,"Bigbang")
+# print(planets)
 
-# 파이썬에서 인덱스 -1은 리스트의 마지막 요소를 의미한다.
+# # 파이썬에서 인덱스 -1은 리스트의 마지막 요소를 의미한다.
 
-planets.append("Pluto")
-print(planets)  # 전체 리스트 출력
-print(planets[-1]) # 마지막 요소 출력
+# planets.append("Pluto")
+# print(planets)  # 전체 리스트 출력
+# print(planets[-1]) # 마지막 요소 출력
 
 
-# list의 pop()은 지정한 인덱스의 요소를 제거하고 반환한다. 만약 인덱스를 지정하지 않으면, 마지막 요소를 제거하고 반환한다.
-planets.pop()
-print(planets)
+# # list의 pop()은 지정한 인덱스의 요소를 제거하고 반환한다. 만약 인덱스를 지정하지 않으면, 마지막 요소를 제거하고 반환한다.
+# planets.pop()
+# print(planets)
 
-#pop의 인덱스를 지정해주면, 해당 부분의 요소를 제거하고 반환한다.
+# #pop의 인덱스를 지정해주면, 해당 부분의 요소를 제거하고 반환한다.
 
-planets.pop(0)
-print(planets)
+# planets.pop(0)
+# print(planets)
 
+
+# 14.  List 사용시 많이 접하는 Erros와 Nested list(에러와 중첩되는 리스트)에 대해서 알아보기.
+
+# 리스트의 인덱스를 초과하여 접근하면, IndexError가 발생한다.
+# corps = ['alpha','beta','gamma','delta','epsilon']
+# print(corps)
+# print(corps[5])
+
+# Nested list(중첩된 리스트) : 리스트 안에 리스트가 있는 것.
+
+corps = ['alpha','beta','gamma','delta','epsilon']
+print(corps)
+
+corps = [['alpha','beta','gamma'],['delta','epsilon','zeta']]
+print(corps)
+
+# Nested list의 인덱스를 접근하면, 리스트 안의 리스트의 요소를 출력한다.
+print(corps[0])
+#중첩된 리스트안에 담긴 인덱스를 접근하면, 리스트 안의 리스트의 요소를 출력한다.
+print(corps[0][0])
