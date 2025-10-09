@@ -361,3 +361,51 @@
 countries = ["Korea", "USA", "Japan", "Germany", "Canada"]
 
 print(countries)
+
+# 인덱스를 통해 리스트의 값에 접근하고, 수정할 수 있다.
+
+countries[4] = "Australia"
+
+print(countries)
+
+# 변수에 값을 담아서, 리스트에 변수로 추가할 수 있다.
+
+element = "mars"
+
+planets  = ["Mercury", "Venus","Earth", element]
+
+print(planets)
+
+# list의 메소드, append()는 리스트의 마지막에 값을 추가한다.
+
+planets.append("Jupiter")
+
+print(planets)
+
+# +=[list]는 리스트의 마지막에 리스트를 추가한다.
+
+planets += ["Saturn", "Uranus", "Neptune"]
+print(planets)
+
+# list의 insert()는 지정한 인덱스에 앞에 값을 추가한다.
+planets.insert(0,"Sun")
+print(planets)
+planets.insert(0,"Bigbang")
+print(planets)
+
+# 파이썬에서 인덱스 -1은 리스트의 마지막 요소를 의미한다.
+
+planets.append("Pluto")
+print(planets)  # 전체 리스트 출력
+print(planets[-1]) # 마지막 요소 출력
+
+
+# list의 pop()은 지정한 인덱스의 요소를 제거하고 반환한다. 만약 인덱스를 지정하지 않으면, 마지막 요소를 제거하고 반환한다.
+planets.pop()
+print(planets)
+
+#pop의 인덱스를 지정해주면, 해당 부분의 요소를 제거하고 반환한다.
+
+planets.pop(0)
+print(planets)
+
